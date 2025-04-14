@@ -24,11 +24,11 @@ private:
 public:
     Player(string name, Race race, int hitPoints, int magicPoints);
 
-    string getName();
-    Race getRace();
+    string getName() const;
+    Race getRace() const;
 
-    int getHitPoints();
-    int getMagicPoints();
+    int getHitPoints() const;
+    int getMagicPoints() const;
 
     void setName(string name);
     void setRace(Race race);
@@ -36,7 +36,7 @@ public:
     void setHitPoints(int hitPoints);
     void setMagicPoints(int magicPoints);
 
-    string whatRace();
+    string whatRace() const;
 
     virtual string attack() const = 0;
 };
